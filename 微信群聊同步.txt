@@ -1,0 +1,18 @@
+此文件作为微信群聊的历史记录
+
+每天群公告放一道python练习题，写完发出来交流。旨在相互促进、保持学习热情，可以拉有兴趣的人进群
+
+Exercise 1:
+
+Write a program that chooses a random integer between 0 and 100 (inclusive). Then ask the user to guess what number has been chosen.
+
+Each time the user enters a guess, the program indicates one of:
+
+Too high; Too low; Just right
+
+If the user guessed correctly, then the program exits. Otherwise, the user is asked to try again.
+
+The program only exits after the user guesses correctly.
+
+Note:
+If the user simply presses Enter when presented with the input prompt, the value returned by input is an empty string, not None. Indeed, the return value from input will always be a string, regardless of what the user entered.
