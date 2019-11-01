@@ -36,4 +36,14 @@ wepython=# select * from persons natural join exercise;
   1 | liuchenyang | guess random integer
 (1 row)
 
-wepython=# 
+wepython=# \connect postgres
+You are now connected to database "postgres" as user "ripfreeworld".
+postgres=# alter database wepython owner to lcy;
+ALTER DATABASE
+
+
+
+
+
+
+
