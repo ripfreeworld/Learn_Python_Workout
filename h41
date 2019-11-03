@@ -1,0 +1,14 @@
+import random
+x=random.randint(0,100)
+a=input("please guess a number between 0 and 100: ")
+y=int (a)
+while y!=x:
+    if y<x:
+        print("Too low")
+        y=int(input("Please try again: "))
+    if y>x:
+        print("Too high")
+        y=int(input("Please try again: "))
+if y==x:
+    print("Just right")
+    exit()
