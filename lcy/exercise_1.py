@@ -1,7 +1,7 @@
 import random
 
 lowerBound = 1
-upperBound = 100
+upperBound = 10
 
 number = random.randint(lowerBound, upperBound)
 numUserStr = ""
@@ -25,6 +25,5 @@ while numUser != number:
             break
         else:
             print("invalid input")
-    finally:
-        pass
+    
 
