@@ -31,19 +31,19 @@ def Guessnum(lBound, uBound):
                     break
 
 
-def GuessFruit(Fruitnum):
+def GuessFruit(fruitNum):
     numUser = -1        # assign a number out of range to the default guess 
     attempt = 0
 
-    while numUser != Fruitnum:
+    while numUser != fruitNum:
         getInput = GetFruit()
         if type(getInput) == str:
             break
         else:
             numUser = getInput
-            if numUser < Fruitnum:
+            if numUser < fruitNum:
                 print("Please choose a later word!\n")
-            elif numUser > Fruitnum:
+            elif numUser > fruitNum:
                 print("Please choose an earlier word!\n")
             else:
                 print("just right!\n")
@@ -55,17 +55,18 @@ def GuessFruit(Fruitnum):
 
 
 def GetFruit():
-    userInput = input(f"please guess a fruit\n")
-    if userInput == "q":
-        return userInput
-    else:
-        try:
-            fruitnum = textDict[userInput]
-        except:
-            print("This fruit is not recorded. Please guess another fruit.")
-            GetFruit()
-        finally:
-            return fruitnum
+    while True:
+        userInput = input(f"please guess a fruit\n")
+        if userInput == "q":
+            return userInput
+        else:
+            try:
+                fruitnum = textDict[userInput]
+                return fruitnum
+            except:
+                print("This fruit is not recorded. Please guess another fruit.")
+            finally:
+                pass
 
 ## main()            
 print("Guess Game starts\npress 'q' to quit\n")
