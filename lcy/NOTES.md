@@ -13,7 +13,7 @@ for vowel in 'aeiou':
 &nbsp;      break
 else:
 &nbsp;  starts_with_vowel = False
-</pre>
+</pre><br>
 
 4. strings are immutable: <pre>
 s = 'abcd'
