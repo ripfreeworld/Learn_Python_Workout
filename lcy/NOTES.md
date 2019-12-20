@@ -8,11 +8,15 @@ Python 2 first compare them by type, and then compare them within that type. All
 3. `for` and `while` loops in Python support an `else` clause, just as if statements do. The `else` attached to a loop means: Only execute this code if we didn't encounter a `break`.<br>
 e.g. <pre>
 for vowel in 'aeiou':
-    if word[0] == vowel:
-        starts_with_vowel = True
-        break
+&nbsp;  if word[0] == vowel:
+&nbsp;      starts_with_vowel = True
+&nbsp;      break
 else:
-    starts_with_vowel = False
+&nbsp;  starts_with_vowel = False
 </pre>
-4. 
+4. strings are immutable: <pre>
+s = 'abcd'
+s[0] = '!'</pre>
+This code leads to an exception.<br>
+Strings are the most common type used as dictionary keys. If strings were mutable, then they wouldn't be allowed as dict keys.
 
