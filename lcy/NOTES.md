@@ -14,6 +14,7 @@ for vowel in 'aeiou':
 else:
 &nbsp;  starts_with_vowel = False
 </pre>
+
 4. strings are immutable: <pre>
 s = 'abcd'
 s[0] = '!'</pre>
