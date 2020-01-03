@@ -13,9 +13,9 @@ for vowel in 'aeiou':
 &nbsp;      break
 else:
 &nbsp;  starts_with_vowel = False
-</pre><br>
+</pre>
 
-4. strings are immutable: <pre>
+4.  strings are immutable: <pre>
 s = 'abcd'
 s[0] = '!'</pre>
 This code leads to an exception.<br>
