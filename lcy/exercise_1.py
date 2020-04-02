@@ -9,7 +9,7 @@ numUser = lowerBound - 1
 print("Guess Game starts\npress 'q' to quit\n")
 
 while numUser != number:
-    numUserStr = input("Enter your guess between {} and {}: \n".format(lowerBound, upperBound))
+    numUserStr = input("Enter your guess between {0} and {1}: \n".format(lowerBound, upperBound))
     try:
         numUser = int(numUserStr)
         if numUser < number:
