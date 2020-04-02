@@ -85,11 +85,10 @@ if gamemode == "1":
 
 elif gamemode == "2":
     print("fruit mode")
-    i = 1
     textArray = ["apple", "banana", "cherry", "grape", "orange", "pear", "pineapple", "strawberry", "watermelon"]
     textDict = {}
     for i in range(1, len(textArray)):
-        textDict[textArray[i]] = i
+        textDict[textArray[i-1]] = i
     # textDict = {        # if some keys duplicate, the later one would substitute the former one
     #     "apple": 1,
     #     "banana": 2,

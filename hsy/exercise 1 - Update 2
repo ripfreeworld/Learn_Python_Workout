@@ -1,0 +1,24 @@
+print("MyDictionary: ")
+words={"the":1,"be":2,"to":3,"of":4,"and":5,"a":6,"in":7,"that":8,"have":9,"there":10}
+
+list01=sorted(words.items(),key=lambda x:x[1])
+for i in range(len(list01)):
+    print(list01[i][0]),
+
+guess=raw_input("\nplease guess a word from the list: (you can try 5 times)\n")
+x=words[guess]
+import random
+y=random.randint(0,10)
+c=1
+while c<5:
+    if x!=y:
+        print("please try again")
+        guess=raw_input("please guess a word from the list: \n")
+        x=words[guess]
+        c+=1
+    if y==x:
+        print("Just right")
+        exit()
+else:
+        print("sorry, run out of times")
+        exit()
